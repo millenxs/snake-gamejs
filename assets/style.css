@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#romanticCard, #gameOverCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: pink;
+    padding: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#romanticCard.hidden, #gameOverCard.hidden {
+    display: none;
+}
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+	
+}
+
+#playlistContainer {
+    width: 400px; /* Ajuste conforme necessário */
+    margin-left: 20px; /* Espaçamento entre o jogo e a playlist */
+}
+
+#gameCanvas {
+    border: 1px solid #000;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#romanticCard, #gameOverCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: pink;
+    padding: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#romanticCard.hidden, #gameOverCard.hidden {
+    display: none;
+}

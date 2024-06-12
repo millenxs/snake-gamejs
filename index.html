@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Valentine's</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="playlistContainer">
+            <!-- Coloque o código de incorporação da playlist do Spotify aqui -->
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXco6WE2xPt0R?utm_source=generator" width="400" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+    <div>
+        <button onclick="restartGame()">Reiniciar</button>
+        <button onclick="showRandomCard()">Abrir Cartão Romântico</button>
+    </div>
+    <div id="romanticCard" class="hidden">
+        <div id="cardContent"></div>
+        <button onclick="closeCard()">Fechar</button>
+    </div>
+    <div id="gameOverCard" class="hidden">
+        <h2>GAME OVER</h2>
+        <button onclick="closeGameOverCard()">Fechar</button>
+    </div>
+    <script src="./assets/script.js"></script>
+  
+</body>
+</html>
